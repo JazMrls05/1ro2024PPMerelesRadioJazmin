@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.1">
+    <title>Jazmin Mereles, Primer Parcial</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+
+<body>
+    <div class = "form-datos">
+        Filtrar por:
+        <select id = "select-personas">
+            <option value = "Todos">Todos</option>
+            <option value = "Ciudadano">Ciudadano</option>
+            <option value = "Extranjero">Extranjero</option>
+        </select>
+    </div>
+    <div id = "edad-promedio">
+        Calcular Edad Promedio: 
+        <input type = "text" id = "calcular-edad" readonly>
+        <button class = "boton" id = "btn-calcular-edad">Calcular</button>
+    </div>
+    <main>
+        <div id = "div-tabla" class = "data">
+            <p>Mostrar columnas</p>
+            <input type = "checkbox" id= "chk-id"> ID
+            <input type = "checkbox" id= "chk-nombre"> Nombre
+            <input type = "checkbox" id= "chk-apellido"> Apellido
+            <input type = "checkbox" id= "chk-fechaNac"> Fecha de Nacimiento
+            <input type = "checkbox" id= "chk-dni"> DNI
+            <input type = "checkbox" id= "chk-paisorigen"> País de origen
+
+
+            <table id = "tabla-personas" border="2">
+
+                <thead> 
+                
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+            <button class = "boton" id = "btn-agregar-persona">Agregar persona</button>
+        </div>
+        <div id= formABM class = "data">
+            <h1>Formulario ABM</h1>
+            <form id= "Agregar-atributos" >
+                <div>
+                    <div>
+                        Id
+                        <input = "number" id = "inputId" class = "elemento-abm" placeholder = "Digite su id..." required>
+                    </div>
+                    <div>
+                        Atributo 1:
+                        <input = "text" id = "inputAtributo1" class = "elemento-abm" placeholder = "Digite atributo 1..." required>
+                    </div>
+                    <div>
+                        Atributo 2:
+                        <input = "text" id = "inputAtributo2" class = "elemento-abm" placeholder = "Digite atributo 2..." required>
+                    </div>
+                    <div>
+                        Tipo:
+                        <select id= "selectTipo" class = "elemento-abm">
+                            <option value = "Ciudadano">Ciudadano</option>
+                            <option value = "Extranjero">Extranjero</option>
+                        </select>
+                    </div>
+                    <div>
+                        Atributo 3:
+                        <input = "text" id = "inputAtributo3" class = "elemento-abm" placeholder = "Digite atributo 3..." required>
+                    </div>
+                </div>
+            </form>
+            <button  id = "enviarDatos" class = "boton" type = "submit" >Aceptar</button>
+            <button id = "cancelar" class = "boton" >Cancelar</button>
+        </div>
+    </main>
+
+<script src = "main.js"></script>
+
+
+</body>
+</html>
